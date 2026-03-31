@@ -406,6 +406,7 @@ body {
   padding: 100px;
   display: flex;
   flex-flow: column nowrap;
+  background-image: linear-gradient(var(--dark-bg), var(--dark-bg-tertiary));
 }
 
 .about-intro {
@@ -451,6 +452,7 @@ body {
 .about-icon {
   font-size: var(--fs-xl);
   margin-bottom: var(--spacin-xl);
+  color: var(--primary-color);
 }
 
 .ead {
@@ -473,7 +475,7 @@ body {
 
 .about-visual h3 {
   color: var(--text-primary);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: var(--spacin-md);
 }
@@ -483,7 +485,7 @@ body {
   height: 100%;
   text-align: center;
   background-color: var(--dark-bg-secondary);
-  padding: 20px 90px;
+  padding: 20px 120px;
   border-radius: 15px;
   border: 2px solid var(--primary-color);
   margin-top: var(--spacin-2xl);
@@ -536,4 +538,292 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* ====================================
+  .6 SKILLS SECTION
+   ===================================== */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle-2 {
+  font-size: var(--fs-lg);
+  color: var(--text-secondary);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills {
+  background-color: var(--dark-bg);
+  padding: var(--spacin-2xl) 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacin-lg);
+  padding: var(--spacin-2xl);
+}
+
+.skills-tool {
+  background-image: linear-gradient(
+    var(--dark-bg-secondary),
+    var(--dark-bg-tertiary)
+  );
+  padding: var(--spacin-2xl);
+  border-radius: var(--spacin-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.skills-tool:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px #00d5ff5e;
+}
+
+.head h3 {
+  color: var(--primary-color);
+}
+
+.head {
+  margin-bottom: var(--spacin-lg);
+}
+
+.skill-level {
+  background-color: #3fc8e322;
+  color: var(--primary-color);
+  padding: var(--spacin-xsm) var(--spacin-md);
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-level::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  position: absolute;
+  background-color: #2ed0f157;
+  transition: var(--transition-fast);
+}
+
+.skill-level:hover::before {
+  left: 100%;
+}
+
+.skill-description {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.progress-text {
+  color: var(--text-secondary);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 212, 255, 0.1);
+  overflow: hidden;
+  border-radius: 13px;
+  margin-top: var(--spacin-lg);
+  margin-bottom: var(--spacin-lg);
+}
+
+.progress-fill {
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  border-radius: 10px;
+  animation: fillProgress 1.5s ease-out both;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0;
+  }
+}
+
+/* ===================================
+ 7. PROJECTS SECTION
+   =================================== */
+
+.projects {
+  background-image: linear-gradient(var(--dark-bg-tertiary), var(--dark-bg));
+  padding: var(--spacin-2xl) 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacin-xl);
+  padding: var(--spacin-3xl);
+}
+
+.project-card {
+  background-image: linear-gradient(
+    var(--dark-bg-tertiary),
+    var(--dark-bg-secondary)
+  );
+  padding: var(--spacin-xl);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.project-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px #00d5ffb5;
+}
+
+.project-card::before {
+  content: "";
+  top: 0;
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 212, 255, 0.1),
+    transparent
+  );
+  transition: left var(--transition-normal);
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+.project-head {
+  display: flex;
+  gap: var(--spacin-md);
+  align-items: center;
+  margin-bottom: var(--spacin-xl);
+}
+
+.project-icon {
+  font-size: var(--fs-2xl);
+}
+
+.project-description {
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+.project-note {
+  line-height: 1.4;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.project-skills {
+  display: flex;
+  gap: var(--spacin-lg);
+}
+
+.tech {
+  background-color: #3fc8e322;
+  color: var(--primary-color);
+  padding: var(--spacin-xsm) var(--spacin-md);
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  margin-top: var(--spacin-xl);
+  margin-bottom: var(--spacin-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-view {
+  display: flex;
+  gap: var(--spacin-lg);
+}
+
+.view {
+  color: var(--primary-color);
+  font-weight: bolder;
+  position: relative;
+}
+
+.view::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition-fast);
+}
+
+.view:hover::after {
+  width: 100%;
+}
+
+/* ==================================
+     8. PROBLEM SOLVIN SECTION
+   ================================== */
+
+.solve {
+  background-image: linear-gradient(var(--dark-bg), var(--dark-bg-tertiary));
+  padding: var(--spacin-3xl);
+}
+
+.solve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+.solve-card {
+  background: linear-gradient(
+    to left,
+    var(--dark-bg-secondary),
+    var(--dark-bg-tertiary)
+  );
+  padding: var(--spacin-xl);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.solve-card:hover {
+  border-color: var(--primary-color);
+  background: var(--dark-bg-secondary);
+}
+
+.num {
+  color: var(--primary-color);
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--spacin-xl);
+}
+
+.description {
+  color: var(--primary-color);
+  margin-bottom: var(--spacin-lg);
+}
+
+.note {
+  color: var(--text-secondary);
 }
