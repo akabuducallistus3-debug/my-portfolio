@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coversion</title>
+    <link rel="stylesheet" href="styles/convert.css" />
+  </head>
+
+  <body>
+    <h1>Convert Your Temperature Here!</h1>
+
+    <input placeholder="Input your temperature" class="temp" />
+
+    <select id="" class="js-select">
+      <option value="select one" disabled selected>Select temperature</option>
+      <option value="℃">℃</option>
+      <option value="℉">℉</option>
+    </select>
+
+    <button onclick="convertToTemp()">Convert</button>
+
+    <div class="js-result"></div>
+
+    <h1>Convert 'KM', 'FEET' and 'MILES' Here!</h1>
+
+    <input class="js-value" />
+
+    <select id="" class="js-from">
+      <option value="From " selected disabled>From</option>
+      <option value="KM">KM</option>
+      <option value="MILES">MILES</option>
+      <option value="FEET">FEET</option>
+      <option value="lbs">lbs</option>
+    </select>
+    <span>To</span>
+    <select id="" class="js-to">
+      <option value="From " selected disabled>To</option>
+      <option value="KM">KM</option>
+      <option value="MILES">MILES</option>
+      <option value="FEET">FEET</option>
+      <option value="lbs">lbs</option>
+    </select>
+    <button onclick="convertToL()">convert</button>
+    <p class="js-view"></p>
+    <!-- <input class="test" />
+
+    <button onclick="testin()">ceck</button>
+
+    <datalist>
+      <select>
+        <option value="">34</option>
+        <option value="">45</option>
+      </select>
+    </datalist> -->
+
+    <script src="scripts/convert.js"></script>
+  </body>
+</html>

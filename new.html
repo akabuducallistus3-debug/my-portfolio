@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New JavaScript Exercise</title>
+    <link rel="stylesheet" href="styles/new.css" />
+  </head>
+  <body>
+    <header><h1>New JavaScript exercise</h1></header>
+    <h4>Input Your Name Here ↓</h4>
+    <input
+      placeholder="Type Your Name Here"
+      class="js-name"
+      onkeydown="keyPressedDown()"
+    />
+    <h4>Input Your Age Below ↓</h4>
+    <input
+      placeholder="Input Your Age"
+      class="js-num"
+      onkeydown="keyPressedDown()"
+    />
+    <button onclick="input()">Input</button>
+
+    <p class="js-para"></p>
+
+    <button onclick="playerGame('Heads')">Heads</button>
+    <button onclick="playerGame('Tails')">Tails</button>
+    <button onclick="autoPlay()">Auto Play</button>
+    <p class="js-tail"></p>
+    <p class="js-score"></p>
+    <h4>Input whatever You want to buy and the price to save it</h4>
+    <div class="inputs">
+      <input placeholder="input List" class="js-names" onkeydown="key()" />
+      <input placeholder="Input price" class="js-price" onkeydown="key()" />
+      <button onclick="addList()" class="css-button">Add</button>
+    </div>
+    <div class="js-list"></div>
+
+    <script src="scripts/new.js"></script>
+  </body>
+</html>

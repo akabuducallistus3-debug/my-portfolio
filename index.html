@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio - Engineering & Tech Solutions</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-icon">◆</span>
+          <span class="logo-text">DevAkabs Callie</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#goals" class="nav-link">Goals</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="gradient-text">Building Tomorrow's</span>
+          <span class="gradient-text">Engineering Solutions</span>
+        </h1>
+        <p class="hero-subtitle">
+          I'm a developer passionate about combining software engineering with
+          real-world energy and infrastructure challenges
+        </p>
+        <div class="hero-cta">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document
+                .getElementById('projects')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            View My Work
+          </button>
+          <button
+            class="btn btn-secondary"
+            onclick="
+              document
+                .getElementById('contact')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Get In Touch
+          </button>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
+      <div class="hero-background">
+        <div class="grid-background"></div>
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              Hi 👋 my name is Akabudu Callistus, i'm a beginner developer with
+              a keen eye for detail and a passion for solving complex problems.
+              While I may be slow to open up, I'm deeply focused and committed
+              to continuous learning.
+            </p>
+            <p class="about-description">
+              My journey in tech started with curiosity about how systems work.
+              I'm particularly interested in the intersection of software
+              development and engineering—especially in energy, petroleum, and
+              sustainable technology solutions. I believe that great code can
+              power real-world impact.
+            </p>
+            <div class="about-traits">
+              <div class="trait">
+                <span class="trait-icon">🔍</span>
+                <h3>Observant</h3>
+                <p>
+                  I notice details others miss, which helps me debug and
+                  optimize code effectively.
+                </p>
+              </div>
+              <div class="trait">
+                <span class="trait-icon">🎯</span>
+                <h3>Focused</h3>
+                <p>
+                  I commit fully to projects and see them through to completion
+                  with consistency.
+                </p>
+              </div>
+              <div class="trait">
+                <span class="trait-icon">📚</span>
+                <h3>Learner</h3>
+                <p>
+                  I embrace challenges as opportunities to grow and expand my
+                  technical skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="profile-card">
+              <div class="profile-icon">
+                <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="30" r="20" fill="currentColor" />
+                  <path
+                    d="M 20 60 Q 20 50 50 50 Q 80 50 80 60 L 80 90 Q 80 100 70 100 L 30 100 Q 20 100 20 90 Z"
+                    fill="currentColor"
+                  />
+                </svg> -->
+                <img src="16697.jpg" alt="" />
+              </div>
+              <h3>Developer & Problem Solver</h3>
+              <p>Bridging code and engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">My current toolkit and areas of focus</p>
+
+        <div class="skills-grid">
+          <!-- HTML Skill -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>HTML</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <p class="skill-description">
+              Semantic markup, forms, accessibility basics
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%"></div>
+            </div>
+            <span class="progress-text">65%</span>
+          </div>
+
+          <!-- CSS Skill -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>CSS</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <p class="skill-description">
+              Flexbox, Grid, animations, responsive design
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+            <span class="progress-text">70%</span>
+          </div>
+
+          <!-- JavaScript Skill -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>JavaScript</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <p class="skill-description">
+              DOM manipulation, events, basic algorithms
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%"></div>
+            </div>
+            <span class="progress-text">60%</span>
+          </div>
+
+          <!-- Problem Solving -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>Problem Solving</h3>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <p class="skill-description">
+              Analytical thinking, debugging, logical reasoning
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <span class="progress-text">85%</span>
+          </div>
+
+          <!-- Learning Ability -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>Learning Ability</h3>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <p class="skill-description">
+              Quick adaptation, documentation reading, self-teaching
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <span class="progress-text">80%</span>
+          </div>
+
+          <!-- Engineering Interest -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>Engineering Knowledge</h3>
+              <span class="skill-level">Growing</span>
+            </div>
+            <p class="skill-description">
+              Energy systems, infrastructure, petroleum tech basics
+            </p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 50%"></div>
+            </div>
+            <span class="progress-text">50%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Showcasing my learning journey and technical growth
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1: Temperature Converter -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🌡️</div>
+              <h3>Temperature Converter</h3>
+            </div>
+            <p class="project-description">
+              A real-time temperature conversion tool that converts between
+              Celsius, Fahrenheit, and Kelvin. Built with vanilla JavaScript to
+              understand event handling and DOM manipulation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="convert.html" class="project-link">View Project →</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Simple Calculator -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🧮</div>
+              <h3>Simple Calculator</h3>
+            </div>
+            <p class="project-description">
+              A functional calculator application supporting basic arithmetic
+              operations. Demonstrates understanding of JavaScript functions,
+              event listeners, and state management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="calculator.html" class="project-link">View Project →</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Interactive Dashboard UI -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">📊</div>
+              <h3>Energy Dashboard UI</h3>
+            </div>
+            <p class="project-description">
+              An interactive dashboard UI prototype for monitoring energy
+              consumption metrics. Combines responsive design with interactive
+              elements to simulate real-world engineering dashboards.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project →</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem-Solving Mindset Section -->
+    <section class="problem-solving">
+      <div class="container">
+        <h2 class="section-title">My Problem-Solving Approach</h2>
+        <div class="approach-grid">
+          <div class="approach-card">
+            <div class="approach-number">01</div>
+            <h3>Understand the Problem</h3>
+            <p>
+              I take time to fully comprehend the challenge before jumping to
+              solutions. This observant nature helps me identify root causes.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-number">02</div>
+            <h3>Research & Learn</h3>
+            <p>
+              I'm committed to learning the right tools and methodologies. I
+              don't shy away from documentation or asking questions.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-number">03</div>
+            <h3>Implement Consistently</h3>
+            <p>
+              Once I understand the path forward, I execute with focus and
+              consistency, iterating until the solution is solid.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-number">04</div>
+            <h3>Apply to Real-World</h3>
+            <p>
+              I think beyond the code—how can this solve actual problems in
+              energy, infrastructure, or sustainability?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Goals Section -->
+    <section id="goals" class="goals">
+      <div class="container">
+        <h2 class="section-title">Future Goals & Vision</h2>
+        <p class="section-subtitle">Where I'm heading in my tech journey</p>
+
+        <div class="goals-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <h3>Near Term (6-12 months)</h3>
+              <ul>
+                <li>
+                  Master vanilla JavaScript and understand advanced DOM
+                  manipulation
+                </li>
+                <li>
+                  Learn a modern framework (React or Vue) for building scalable
+                  applications
+                </li>
+                <li>
+                  Build 5-10 portfolio projects showcasing different technical
+                  skills
+                </li>
+                <li>
+                  Contribute to open-source projects in the
+                  energy/sustainability space
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <h3>Medium Term (1-2 years)</h3>
+              <ul>
+                <li>
+                  Develop full-stack applications with backend integration
+                  (Node.js, Python)
+                </li>
+                <li>
+                  Specialize in data visualization for engineering and energy
+                  analytics
+                </li>
+                <li>
+                  Build a tool or application that addresses a real
+                  energy/infrastructure challenge
+                </li>
+                <li>Gain experience in cloud deployment and DevOps basics</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <h3>Long Term (2+ years)</h3>
+              <ul>
+                <li>
+                  Combine AI/Machine Learning with engineering domain knowledge
+                </li>
+                <li>
+                  Work on projects that impact renewable energy, smart grids, or
+                  sustainable infrastructure
+                </li>
+                <li>
+                  Become a bridge between software engineering and engineering
+                  disciplines
+                </li>
+                <li>
+                  Lead or contribute to transformative tech solutions in the
+                  energy sector
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="goals-highlight">
+          <h3>The Big Picture</h3>
+          <p>
+            I'm not just learning to code—I'm learning to
+            <strong>build solutions</strong>. My goal is to leverage software
+            engineering to tackle real-world challenges in energy, petroleum
+            technology, and sustainable infrastructure. I want to be the
+            developer who understands both the code and the domain, creating
+            technology that matters.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'd love to hear from you. Get in touch!</p>
+
+        <div class="contact-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                class="form-input"
+                required
+              />
+              <label for="name" class="floating-label">Your Name</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                class="form-input"
+                required
+              />
+              <label for="email" class="floating-label">Your Email</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                class="form-input"
+                required
+              />
+              <label for="subject" class="floating-label">Subject</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                class="form-input form-textarea"
+                rows="5"
+                required
+              ></textarea>
+              <label for="message" class="floating-label">Your Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message
+            </button>
+          </form>
+
+          <div class="contact-info">
+            <h3>Other Ways to Connect</h3>
+            <div class="contact-links">
+              <a href="#" class="contact-link">
+                <span class="link-icon"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="contact-link">
+                <span class="link-icon"
+                  ><i class="fa-brands fa-github-square"></i
+                ></span>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="contact-link">
+                <span class="link-icon"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <span>Email</span>
+              </a>
+              <a href="#" class="contact-link">
+                <span class="link-icon"
+                  ><i class="fa-brands fa-twitter-square"></i
+                ></span>
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Developer Portfolio. Crafted with passion for engineering
+          solutions.
+        </p>
+        <div class="footer-links">
+          <a href="#home">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

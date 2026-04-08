@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akabs Callie - Developer & Engineer</title>
+    <link rel="stylesheet" href="styles/another.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span class="logo-text">Akabs Callie</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item"><a href="#goals" class="nav-link">Goals</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-line">Building Tomorrow's</span>
+          <span class="title-line highlight">Engineering Solutions</span>
+        </h1>
+        <p class="hero-subtitle">
+          A developer learning to solve real-world problems through code,
+          combining software engineering with energy and infrastructure
+          innovation.
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="btn btn-primary"
+            onclick="
+              document
+                .getElementById('projects')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            View My Work
+          </button>
+          <button
+            class="btn btn-secondary"
+            onclick="
+              document
+                .getElementById('contact')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Get In Touch
+          </button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <div class="card-icon">💻</div>
+          <p>Clean Code</p>
+        </div>
+        <div class="floating-card card-2">
+          <div class="card-icon">⚙️</div>
+          <p>Engineering</p>
+        </div>
+        <div class="floating-card card-3">
+          <div class="card-icon">🔧</div>
+          <p>Problem Solving</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              I'm a beginner developer with a passion for engineering. While I'm
+              observant and thoughtful—sometimes slow to open up—I'm deeply
+              focused and consistent in my learning journey.
+            </p>
+            <p class="about-description">
+              My strength lies in persistence and attention to detail. I
+              approach problems methodically, breaking them down into manageable
+              pieces. I'm fascinated by how software can solve real-world
+              challenges, especially in energy, petroleum, and infrastructure
+              sectors.
+            </p>
+            <p class="about-description">
+              I believe the future belongs to those who can bridge the gap
+              between traditional engineering and modern software development.
+              That's where I'm headed—combining my technical skills with domain
+              knowledge to create meaningful solutions.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <span>Consistent Learner</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <span>Problem-Focused</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <span>Detail-Oriented</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <span>Engineering Mindset</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="visual-element">
+              <div class="hexagon hex-1"></div>
+              <div class="hexagon hex-2"></div>
+              <div class="hexagon hex-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="section-container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <!-- HTML Skill -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-name">HTML5</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+            <p class="skill-description">
+              Semantic markup, forms, accessibility basics
+            </p>
+          </div>
+
+          <!-- CSS Skill -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-name">CSS3</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+            <p class="skill-description">
+              Flexbox, Grid, Animations, Responsive Design
+            </p>
+          </div>
+
+          <!-- JavaScript Skill -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-name">JavaScript</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%"></div>
+            </div>
+            <p class="skill-description">
+              DOM manipulation, Events, Basic algorithms
+            </p>
+          </div>
+
+          <!-- Problem Solving -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-name">Problem Solving</h3>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <p class="skill-description">
+              Logical thinking, Debugging, Algorithm design
+            </p>
+          </div>
+
+          <!-- Version Control -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-name">Git & GitHub</h3>
+              <span class="skill-level">Beginner</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%"></div>
+            </div>
+            <p class="skill-description">
+              Commits, Branches, Basic collaboration
+            </p>
+          </div>
+
+          <!-- Learning Mindset -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-name">Learning Agility</h3>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+            <p class="skill-description">
+              Quick adaptation, Consistent practice, Growth mindset
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="section-container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1: Temperature Converter -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🌡️</div>
+              <h3 class="project-title">Temperature Converter</h3>
+            </div>
+            <p class="project-description">
+              A utility tool that converts between Celsius, Fahrenheit, and
+              Kelvin. Built with vanilla JavaScript to practice DOM manipulation
+              and real-time calculations.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project →</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Simple Calculator -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🧮</div>
+              <h3 class="project-title">Simple Calculator</h3>
+            </div>
+            <p class="project-description">
+              A functional calculator supporting basic arithmetic operations.
+              Demonstrates event handling, state management, and user input
+              validation in JavaScript.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project →</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Interactive UI Component -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🎨</div>
+              <h3 class="project-title">Interactive Dashboard UI</h3>
+            </div>
+            <p class="project-description">
+              A responsive dashboard mockup with interactive elements,
+              animations, and smooth transitions. Showcases CSS Grid, Flexbox,
+              and JavaScript interactivity.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project →</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Goals Section -->
+    <section id="goals" class="goals">
+      <div class="section-container">
+        <h2 class="section-title">Future Goals & Vision</h2>
+        <div class="goals-content">
+          <div class="goal-item">
+            <div class="goal-number">01</div>
+            <div class="goal-text">
+              <h3>Master Full-Stack Development</h3>
+              <p>
+                Build expertise in both frontend and backend technologies to
+                create complete solutions for complex engineering problems.
+              </p>
+            </div>
+          </div>
+
+          <div class="goal-item">
+            <div class="goal-number">02</div>
+            <div class="goal-text">
+              <h3>Specialize in Energy Tech</h3>
+              <p>
+                Combine software development with domain knowledge in energy,
+                petroleum, and renewable energy solutions to create innovative
+                applications.
+              </p>
+            </div>
+          </div>
+
+          <div class="goal-item">
+            <div class="goal-number">03</div>
+            <div class="goal-text">
+              <h3>AI & Machine Learning Integration</h3>
+              <p>
+                Learn AI/ML to build predictive models for infrastructure
+                optimization, energy efficiency, and resource management.
+              </p>
+            </div>
+          </div>
+
+          <div class="goal-item">
+            <div class="goal-number">04</div>
+            <div class="goal-text">
+              <h3>Real-World Impact</h3>
+              <p>
+                Develop solutions that address real challenges in energy
+                distribution, infrastructure monitoring, and sustainable
+                technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always interested in learning, collaborating, and exploring
+              new opportunities in software development and engineering.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:alex@example.com" class="contact-link">
+                <span class="link-icon">✉️</span>
+                <span>Email</span>
+              </a>
+              <a href="#" class="contact-link">
+                <span class="link-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="contact-link">
+                <span class="link-icon">🐙</span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder=" "
+                rows="5"
+                required
+              ></textarea>
+              <label for="message">Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Alex Chen. All rights reserved.</p>
+        <p>
+          Designed & Built with <span class="heart">❤️</span> using vanilla
+          HTML, CSS & JavaScript
+        </p>
+      </div>
+    </footer>
+
+    <script src="scripts/another.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ano</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-around;
+        background-color: #0a0e27;
+        border-bottom: 1px solid #ddd;
+        padding: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style-type: none;
+      }
+
+      body {
+        background-color: #0a0e27;
+      }
+
+      .logo {
+        background-image: linear-gradient(to left, pink, yellow);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      .logo-icon {
+        color: red;
+      }
+
+      .ero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        padding-top: 80px;
+      }
+
+      .ero-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+      }
+
+      .rid-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image:
+          linear-gradient(rgba(25, 168, 197, 0.178) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 213, 255, 0.178) 1px, transparent 1px);
+        background-size: 50px 50px;
+        animation: move 20s linear infinite forwards;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(30px, 30px);
+        }
+      }
+
+      .float {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .circle {
+        position: absolute;
+        opacity: 0.3;
+        filter: blur(30px);
+      }
+
+      .circle-1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 0, 255, 0.541);
+        border-radius: 50%;
+        top: 10%;
+        left: 40%;
+        animation: float infinite 8s ease-in-out;
+      }
+
+      .circle-2 {
+        width: 300px;
+        height: 250px;
+        background-color: rgba(255, 0, 0, 0.445);
+        border-radius: 50%;
+        top: 50%;
+        left: 60%;
+        animation: float 7s infinite ease-in-out;
+      }
+
+      .circle-3 {
+        width: 200px;
+        height: 150px;
+        background-color: rgba(0, 128, 0, 0.514);
+        border-radius: 50%;
+        top: 50%;
+        left: 10%;
+        animation: float 6s infinite ease-in-out;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+
+        50% {
+          transform: translate(-50px, -50px);
+        }
+      }
+
+      .btn {
+        padding: 20px;
+        color: #fff;
+        background-color: #0a0e27;
+        border: none;
+        border: 2px solid #00d4ff;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">DevPortfolio</span>
+      </div>
+
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Goals</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="ero">
+      before
+      <div class="ero-back">
+        <div class="rid-back"></div>
+      </div>
+
+      <div class="float">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+      <button class="btn">view my work</button>
+    </section>
+  </body>
+</html>
