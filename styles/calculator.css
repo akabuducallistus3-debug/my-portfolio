@@ -1,0 +1,49 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  font-size: 30px;
+}
+
+.display {
+  font-size: 50px;
+}
+
+.first button,
+.second button,
+.trid button,
+.four button,
+.five {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.first button:last-child,
+.second button:last-child,
+.trid button:last-child {
+  background-color: orangered;
+}
+
+.four button:first-child,
+.four button:nth-child(3),
+.four button:last-child {
+  background-color: orangered;
+}
+
+.five button {
+  background-color: red;
+}
+
+button:active {
+  background-color: #333;
+}

@@ -1,0 +1,29 @@
+.inputs,
+.js-list {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.js-names,
+.js-price {
+  padding: 0.3rem;
+  font-size: 16px;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.css-button,
+.js-button {
+  padding: 0.6rem;
+  border: none;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.js-button {
+  background-color: darkred;
+}
